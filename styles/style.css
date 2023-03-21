@@ -1,0 +1,335 @@
+/* Author: Devin Augot */
+/* Date: December, ,2022 */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+:root {
+  --Headbg: rgb(0, 0, 0);
+  --bg: rgb(255, 255, 255);
+  --light: rgba(2, 232, 232, 0.357);
+  --primary: rgb(0, 113, 174);
+  --shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--bg);
+  display: grid;
+  gap: 25px;
+}
+
+/* Home Page styling */
+
+/* pics for modal */
+#python {
+  width: 15px;
+  height: 15px;
+}
+#JS {
+  width: 15px;
+  height: 15px;
+}
+#java {
+  width: 15px;
+  height: 15px;
+}
+#html {
+  width: 15px;
+  height: 15px;
+}
+#css-pic {
+  width: 15px;
+  height: 15px;
+}
+.h1-home {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.para-div {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  padding: 0 100px;
+}
+#AboutMe {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* Contact page */
+.main-header {
+  display: grid;
+  width: auto;
+  height: auto;
+  background-color: var(--Headbg);
+  color: rgb(255, 255, 254);
+}
+#header-h1 {
+  padding-top: 1rem;
+  display: flex;
+  font-size: 2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+#h1-div {
+  padding: 20px;
+}
+
+/* styling navlist */
+#navlist {
+  background-color: #0074d900;
+  position: absolute;
+  width: 100%;
+}
+/* styling navlist anchor element */
+#navlist a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.navlist-right {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  float: right;
+}
+/* hover effect of navlist anchor element */
+#navlist a:hover {
+  color: aqua;
+  transition: 0.3s;
+}
+
+#Contact-heading {
+  width: auto;
+}
+.Contact-div {
+  padding-top: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  display: grid;
+  justify-content: center;
+}
+a {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: black;
+}
+
+.footer-contact {
+  border-top: 1px solid;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+/* Projects page styling  */
+
+.h1-project {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+#pro-1 {
+  justify-content: center;
+  border-radius: 4px;
+  width: 350px;
+  height: 300px;
+}
+
+/* modal styling */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+#myBtn {
+  color: black;
+  width: 500px;
+}
+
+.btn-div {
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+
+  border: 2px solid rgb(35, 34, 34);
+  border-radius: 5px;
+  /* changes modal content window width size  */
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Expandable tabs here and image within css */
+#Dg-img {
+  width: 300px;
+  height: 200px;
+  border: 1px solid;
+  border-radius: 2px;
+}
+#gb-img {
+  width: 300px;
+  height: 200px;
+  border: 1px solid;
+  border-radius: 2px;
+}
+#rps-img {
+  width: 300px;
+  height: 200px;
+  border: 1px solid;
+  border-radius: 2px;
+}
+
+.col-div {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.column {
+ 
+  border-radius: 5px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  width: 20%;
+
+  padding: 20px;
+  margin: 40px;
+  color: black;
+
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  color: rgb(6, 6, 6);
+  display: row;
+  justify-content: center;
+  border: 0.5px solid;
+  box-shadow: 0px 6px 8.5px rgba(0, 0, 0, 0.792);
+  justify-content: center;
+}
+
+.containerTab {
+ 
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 25px;
+  padding: 25px;
+  color: rgb(7, 7, 7);
+  box-shadow: 0px 6px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  float: right;
+  color: white;
+
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/* project description buttons */
+.exp-tabs{
+  padding-left: 3rem;
+  justify-content: center;
+  
+}
+#b1 {
+  font-size: 14px;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  color: white;
+  background: rgb(0, 0, 0);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border: 3px solid rgb(12, 52, 211);
+  border-radius: 5px;
+  /* changes modal content window width size  */
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+#b2 {
+  font-size: 14px;
+
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  color: white;
+  background: rgb(0, 0, 0);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border: 3px solid rgb(12, 52, 211);
+  border-radius: 5px;
+  /* changes modal content window width size  */
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+#b3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 14px;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  color: white;
+  background: rgb(0, 0, 0);
+  border: 3px solid rgb(12, 52, 211);
+  border-radius: 5px;
+  /* changes modal content window width size  */
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.footer {
+  border-top: 1px solid;
+
+  position: relative;
+}
+.footer-home {
+  justify-self: center;
+  position: initial;
+}
+

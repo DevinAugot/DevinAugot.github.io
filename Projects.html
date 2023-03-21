@@ -1,0 +1,134 @@
+<!--  Author: Devin Augot 
+Date: December, ,2022  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="./images/programming.avif" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+      integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devin Augot</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div id="h1-div"><h1 id="header-h1">Devin Augot</h1></div>
+
+      <div id="navlist">
+        <div class="navlist-right">
+          <a href="Home.html">Home</a>
+          <a href="#">Projects</a>
+          <a href="Contact.html">Contact</a>
+        </div>
+      </div>
+    </header>
+    <div class="h1-project">
+      <h1>Current & Completed Project's</h1>
+    </div>
+    <div class="para-div">
+      <p>
+        Hey, Welcome to my project page. This page will give you some idea of
+        what I'm capable of as a Developer currently as im still learning to
+        code and constantly imporiving my skills by pursuing some passion
+        projects and some fun web based game builds over the last 8 months. I'm
+        continsouly growing and honing my skills between what I'm learning in
+        college and pursuing in my free time studies. I hope you enjoy!
+      </p>
+    </div>
+    <!-- Trigger/Open The Modal -->
+    <div class="btn-div">
+      <button id="myBtn">My Most Current Project</button>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="pro-1" src="./images/InstaCodeHome.png" alt="Insta-code" />
+        <img id="pro-1" src="./images/InstaCodeLogin.png" alt="Insta-code" /><img id="pro-1" src="./images/InstaCodeSignUp.png" alt="Insta-code" />
+        <img id = "pro-1"src="./images/FeedPage.png" alt="">
+        <p>
+          This is a current sprint project I'm doing in college that is a
+          ficitious social media website very similar to instagram that, allows
+          users to post current coding projects,pictures, code snippet's and
+          even allows them to ask for help debugging etc. This program/app runs on fetch api's that grab data from user inputs and parse and stringify the JSON data from a live server react database which in turn posts user information on a feed page once the log in or sign up is confirmed. 
+        </p>
+      </div>
+    </div>
+
+    <!-- Expandable tabs -->
+<div class="exp-tabs">
+    <div class="row">
+      <div class="col-div">
+        <div class="column" onclick="openTab('b1');">RPS Game</div>
+      </div>
+
+      <!-- The expanding grid (hidden by default) -->
+      <div id="b1" class="containerTab" style="display: none">
+        <!-- If you want the ability to close the container, add a close button -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn"
+          >x</span
+        >
+        <h2>Rock Paper Sciossor Game</h2>
+        <img id="rps-img" src="./images/RPS.png" alt="" />
+        <p>
+          This is one of the first few projects I did on my own with javascript,
+          very simple but i was very proud of it at the time i made it!😅
+        </p>
+      </div>
+      <div class="col-div">
+        <div class="column" onclick="openTab('b2');">Gary Blues</div>
+      </div>
+
+      <!-- The expanding grid (hidden by default) -->
+      <div id="b2" class="containerTab" style="display: none">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn"
+          >x</span
+        >
+        <h2>Gary Blues Diner</h2>
+        <img id="gb-img" src="./images/GaryBlue.png" alt="gary blues" />
+        <p>
+          This is a resturant website complete with an ordering and expandable
+          menu page that was a second semester project I did in keyin college,
+          My thought was to do a new-age but old school resturant type of
+          website, theres alot of things i would do differently now design wise
+          though (mabye a little less neon to start!🤣)
+        </p>
+      </div>
+      <div class="col-div">
+        <div class="column" onclick="openTab('b3');">Dice Game</div>
+      </div>
+
+      <!-- The expanding grid (hidden by default) -->
+      <div id="b3" class="containerTab" style="display: none">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn"
+          >x</span
+        >
+        <h2>Dice Game</h2>
+        <img id="Dg-img" src="./images/DiceGame.png" alt="" />
+        <p>
+          This is a dice game i recently created with JavaScript/HTML/CSS, the
+          goal is to roll die higher then the second players last roll and it
+          dynamcially switches between each player rolling and keeps track of
+          the highscore even when the browser is refreshed! it was a great
+          learning experience.
+        </p>
+      </div>
+    </div>
+  </div>
+
+    <footer class="footer">
+      <strong>&copy; Devin Augot 2022</strong>
+    </footer>
+  </body>
+  <script src="./scripts.js/script.js"></script>
+</html>
